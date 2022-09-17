@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    
+    <title>Document</title>
+</head>
+<body id="main">
+    <div class="cover"></div>
+    <nav>
+        <!-- <label for="" class="logo">DesignX</label> -->
+        <div class="logo"></div>
+        <ul class="one">
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Company</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+        <ul class="two">
+            <li><a href="#">Login</a></li>
+            <li><a href="#" class="reg">Register</a></li>
+        </ul>
+
+        <button id="btn">&#9776;</button>
+    </nav>
+
+    
+    <main>
+        <section >
+          <div class="container">
+            <div class="top">
+              <h1>Make remote work</h1>
+              <p>Get your team in sync, no matter your location, Streamline processes, create team rituals, and watch productivity soar.</p>
+              <a>Learn more</a>
+      
+              <div class="logos">
+              <div class="img1 im"></div>
+              <div class="img2 im"></div>
+              <div class="img3 im"></div>
+              <div class="img4 im"></div>
+              </div>
+            </div>
+            <div class="img"></div>
+          </div>
+        </section>
+      </main>
+
+
+
+    <script>
+        const btn = document.getElementById("btn")
+        const ul = document.querySelector(".one")
+        const cover = document.querySelector(".cover")
+        const main = document.getElementById("main")
+
+        btn.addEventListener("click", ()=> {
+            ul.classList.toggle("click")
+            cover.classList.toggle("backdrop")
+           
+        })
+    </script>
+</body>
+</html>
